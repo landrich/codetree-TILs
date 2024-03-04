@@ -5,8 +5,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        a += 87;
+        b %= 10;
 
-        System.out.println(a + 87);
-        System.out.println(b % 10);
+        System.out.println(a);
+        System.out.println(b);
     }
 }
