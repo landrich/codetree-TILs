@@ -11,7 +11,7 @@ public class Main {
         } else if (score >= 80) {
             rank = "B";
         } else if (score >= 70) {
-            rank = "c";
+            rank = "C";
         } else if (score >= 60) {
             rank = "D";
         } else {
