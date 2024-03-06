@@ -9,8 +9,6 @@ public class Main {
 
         if (a <= b && a <= c) {
             System.out.print(1 + " ");
-        } else if (a == b && a < c) {
-            System.out.print(1 + " ");
         } else {
             System.out.print(0 + " ");
         }
