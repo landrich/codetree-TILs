@@ -13,9 +13,9 @@ public class Main {
 
         if (aCold == 'Y' && aTemp >= 37)
             cnt++;
-        if (aCold == 'Y' && aTemp >= 37)
+        if (bCold == 'Y' && bTemp >= 37)
             cnt++;
-        if (aCold == 'Y' && aTemp >= 37)
+        if (cCold == 'Y' && cTemp >= 37)
             cnt++;
 
         System.out.println(cnt >= 2 ? "E" : "N");
