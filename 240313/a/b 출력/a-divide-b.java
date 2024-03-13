@@ -7,11 +7,12 @@ public class Main {
         int b = sc.nextInt();
         int n = a;
 
-        System.out.print(a > b ? (b / a) + "." : "0.");
+        System.out.print(a > b ? (a / b) + "." + ((a % b) * 10) / b : "0." + (a * 10) / b);
+        a = (a * 10) % b;
 
-        for (int i = 1; i <= 20; i++) {
-            System.out.print((n * 10) / b);
-            n = (n * 10) % b;
+        for (int i = 1; i < 20; i++) {
+            System.out.print((a * 10) / b);
+            a = (a * 10) % b;
         }
     }
 }
