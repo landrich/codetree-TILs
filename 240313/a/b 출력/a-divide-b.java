@@ -10,8 +10,8 @@ public class Main {
         System.out.print(a > b ? (b / a) + "." : "0.");
 
         for (int i = 1; i <= 20; i++) {
-            System.out.print((n * 10) / 7);
-            n = (n * 10) % 7;
+            System.out.print((n * 10) / b);
+            n = (n * 10) % b;
         }
     }
 }
