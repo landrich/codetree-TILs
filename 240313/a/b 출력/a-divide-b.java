@@ -5,7 +5,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        int n = a;
 
-        System.out.printf("%.20f", (double) a / b);
+        System.out.print(a > b ? (b / a) + "." : "0.");
+
+        for (int i = 1; i <= 20; i++) {
+            System.out.print((n * 10) / 7);
+            n = (n * 10) % 7;
+        }
     }
 }
