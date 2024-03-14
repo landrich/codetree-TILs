@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int sum = 0, avg = 0, cnt = 0;
+        int sum = 0, cnt = 0;
 
         for (int i = a; i <= b; i++) {
             if (i % 5 == 0 || i % 7 == 0) {
@@ -15,6 +15,5 @@ public class Main {
         }
 
         System.out.printf("%d %.1f", sum, (double) sum / cnt);
-
     }
 }
