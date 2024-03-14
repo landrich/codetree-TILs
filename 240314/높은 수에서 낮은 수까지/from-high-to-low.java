@@ -5,18 +5,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int min, max;
         
         if (a > b) {
-            max = a;
-            min = b;
+            for (int i = a; i >= b; i--) {
+               System.out.print(i + " ");
+            }
         } else {
-            max = b;
-            min = a;
-        }
-
-        for (int i = max; i >= min; i--) {
-            System.out.print(i + " ");
+            for (int i = b; i >= a; i--) {
+               System.out.print(i + " ");
+            }
         }
     }
 }
