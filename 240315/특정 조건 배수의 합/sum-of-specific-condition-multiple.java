@@ -6,8 +6,10 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int sum = 0;
+        int max = a > b ? a : b;
+        int min = a < b ? a : b;
 
-        for (int i = a; i <= b; i++) {
+        for (int i = min; i <= max; i++) {
             if (i % 5 == 0) {
                 sum += i;
             }
