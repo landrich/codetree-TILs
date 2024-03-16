@@ -7,12 +7,11 @@ public class Main {
         int sum = 0;
 
         for (int i = 1; i <= 100; i++) {
-            if (sum + i >= n) {
+            sum += i;
+            if (sum >= n) {
+                System.out.println(i);
                 break;
             }
-            sum += i;
         }
-
-        System.out.println(sum);
     }
 }
