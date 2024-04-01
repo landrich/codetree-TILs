@@ -8,6 +8,7 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= i; j++) {
+                if (alp == 91) alp = 'A';
                 System.out.print(alp++);
             }
             System.out.println();
