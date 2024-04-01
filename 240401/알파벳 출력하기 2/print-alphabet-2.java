@@ -11,6 +11,7 @@ public class Main {
                 System.out.print("  ");
             }
             for (int j = n; j > i; j--) {
+                if (alp > 'Z') alp = 'A';
                 System.out.print(alp++ + " ");
             }
             System.out.println();
