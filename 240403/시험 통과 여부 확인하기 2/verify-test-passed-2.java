@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] scoreArr = new int[4];
+        int[] scoreArr = new int[n];
         int sum, cnt = 0;
 
         for (int i = 0; i < n; i++) {
