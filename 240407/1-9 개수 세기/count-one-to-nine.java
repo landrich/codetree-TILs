@@ -9,15 +9,11 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             numArr[i] = sc.nextInt();
-        }
-
-        for (int i = 0; i < n; i++) {
             count[numArr[i]]++;
         }
 
         for (int i = 1; i < 10; i++) {
             System.out.println(count[i]);
         }
-
     }
 }
