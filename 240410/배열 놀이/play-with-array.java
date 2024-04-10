@@ -13,16 +13,18 @@ public class Main {
             numArr[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < q; i++) {
             query[0] = sc.nextInt();
             if (query[0] == 1) {
                 query[1] = sc.nextInt();
                 System.out.println(numArr[query[1] - 1]);
             } else if (query[0] == 2) {
                 query[1] = sc.nextInt();
+                q2Index = -1;
                 for (int k = 0; k < n; k++) {
                     if (query[1] == numArr[k]) {
                         q2Index = k;
+                        break;
                     }
                 }
                 System.out.println(q2Index == -1 ? 0 : q2Index + 1);
