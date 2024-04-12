@@ -17,7 +17,7 @@ public class Main {
             n2Arr[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < n1; i++) {
+        for (int i = 0; i < n1 - n2 + 1; i++) {
             if (n1Arr[i] == n2Arr[0]) {
                 flag = true;
                 for (int j = 0; j < n2; j++) {
