@@ -19,15 +19,14 @@ public class Main {
 
         for (int i = 0; i < n1; i++) {
             if (n1Arr[i] == n2Arr[0]) {
-                chkIndex = i;
-                break;
-            }
-        }
-
-        for (int i = 0; i < n2; i++) {
-            if (n2Arr[i] != n1Arr[i + chkIndex]) {
-                flag = false;
-                break;
+                flag = true;
+                for (int j = 0; j < n2; j++) {
+                    if (n2Arr[j] != n1Arr[j + i]) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) break;
             }
         }
 
