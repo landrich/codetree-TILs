@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] numArr = new int[100];
-        int num, max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
+        int num;
 
         for (int i = 0; i < 100; i++) {
             num = sc.nextInt();
@@ -14,13 +14,15 @@ public class Main {
             numArr[i] = num;
         }
 
-        for (int i = 0; i < 100; i++) {
+        int max = numArr[0], min = numArr[0];
+
+        for (int i = 1; i < 100; i++) {
             if (numArr[i] > max) {
                 max = numArr[i];
             }
         }
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 1; i < 100; i++) {
             if (numArr[i] < min) {
                 min = numArr[i];
             }
