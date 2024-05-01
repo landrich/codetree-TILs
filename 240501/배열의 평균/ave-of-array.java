@@ -35,6 +35,6 @@ public class Main {
             }
         }
 
-        System.out.println((double) sum / 8);
+        System.out.printf("%.1f", sum / 8);
     }
 }
