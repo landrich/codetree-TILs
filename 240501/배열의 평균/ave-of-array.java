@@ -17,13 +17,13 @@ public class Main {
             for (int j = 0; j < 4; j++) {
                 sum += numArr[i][j];
             }
-            System.out.print((double) (sum / 4) + " ");
+            System.out.printf("%.1f ", (double) sum / 4);
         }
 
         System.out.println();
 
         for (int i = 0; i < 4; i++) {
-            System.out.print((double) (numArr[0][i] + numArr[1][i]) / 2 + " ");
+            System.out.printf("%.1f ", (double) (numArr[0][i] + numArr[1][i]) / 2);
         }
 
         System.out.println();
@@ -35,6 +35,6 @@ public class Main {
             }
         }
 
-        System.out.printf("%.1f", sum / 8);
+        System.out.printf("%.1f", (double) sum / 8);
     }
 }
