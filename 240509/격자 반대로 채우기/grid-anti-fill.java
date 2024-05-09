@@ -6,9 +6,10 @@ public class Main {
         int n = sc.nextInt();
         int[][] numArr = new int[n][n];
         int num = 1;
+        boolean flag = true;
 
         for (int i = n - 1; i >= 0; i--) {
-            if (i % 2 == 1) {
+            if (flag) {
                 for (int j = n - 1; j >= 0; j--) {
                     numArr[j][i] = num++;
                 }
@@ -17,6 +18,7 @@ public class Main {
                     numArr[j][i] = num++;
                 }
             }
+            flag = !flag;
         }
 
         for (int i = 0; i < n; i++) {
