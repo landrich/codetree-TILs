@@ -9,7 +9,6 @@ public class Main {
         String result1 = str1 + str2;
         String result2 = str2 + str1;
 
-
         for (int i = 0; i < result1.length(); i++) {
             if (result1.charAt(i) == result2.charAt(i)) {
                 continue;
