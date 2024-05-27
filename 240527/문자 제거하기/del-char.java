@@ -10,7 +10,7 @@ public class Main {
             num = sc.nextInt();
             if (num == 0) {
                 str = str.substring(1);
-            } else if (num > str.length()) {
+            } else if (num >= str.length()) {
                 str = str.substring(0, str.length() - 1);
             } else {
                 str = str.substring(0, num) + str.substring(num + 1);
