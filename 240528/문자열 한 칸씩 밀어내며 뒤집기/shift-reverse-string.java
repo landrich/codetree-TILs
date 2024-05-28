@@ -10,6 +10,7 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             q = sc.nextInt();
+            System.out.println(q);
             if (q == 1) {
                 str = str.substring(1, str.length()) + str.substring(0, 1);
             } else if (q == 2) {
