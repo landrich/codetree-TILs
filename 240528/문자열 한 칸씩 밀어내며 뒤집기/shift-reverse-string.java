@@ -15,11 +15,8 @@ public class Main {
             } else if (q == 2) {
                 str = str.substring(str.length() - 1) + str.substring(0, str.length() - 1);
             } else {
-                temp = "";
-                for (int j = str.length() - 1; j >= 0; j--) {
-                    temp += str.charAt(j);
-                }
-                str = temp;
+                StringBuffer sb = new StringBuffer(str);
+                str = sb.reverse().toString();
             }
             System.out.println(str);
         }
