@@ -11,7 +11,7 @@ public class Main {
 
         for (int i = 0; i < str1.length(); i++) {
             c = str1.charAt(i);
-            if (c > '0' && c < '9') {
+            if (c >= '0' && c <= '9') {
                 temp1 += c;
             } else {
                 break;
@@ -19,7 +19,7 @@ public class Main {
         }
         for (int i = 0; i < str2.length(); i++) {
             c = str2.charAt(i);
-            if (c > '0' && c < '9') {
+            if (c >= '0' && c <= '9') {
                 temp2 += c;
             } else {
                 break;
