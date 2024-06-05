@@ -7,7 +7,7 @@ public class Main {
         String str2 = sc.next();
         int cnt = 0;
 
-        while (!str1.equals(str2)) {
+        while (str1.equals(str2) == false) {
             str1 = str1.substring(1) + str1.substring(0, 1);
             cnt++;
         }
