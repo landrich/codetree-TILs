@@ -7,7 +7,8 @@ public class Main {
         String str2 = sc.next();
         int cnt = 0;
 
-        while (str1.equals(str2) == false) {
+        for (int i = 0; i < str1.length(); i++) {
+            if (str1.equals(str2)) break;
             str1 = str1.substring(1) + str1.substring(0, 1);
             cnt++;
         }
