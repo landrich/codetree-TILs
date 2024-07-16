@@ -5,6 +5,7 @@ public class Main {
         for (int i = Math.min(n, m); i <= n * m; i++) {
             if (i % n == 0 && i % m == 0) {
                 System.out.println(i);
+                break;
             }
         }
     }
